@@ -1,0 +1,24 @@
+    1  echo "Question 1"
+    2  read -p "Enter username: " user
+    3  if [ "$user" = "$(whoami)" ]; then echo "$user is logged in"; else echo "$user is not logged in"; fi
+    4  echo "Question 2"
+    5  read -p "Enter alphabet: " alpha
+    6  printf "%s\n" [$alpha]*
+    7  cd Desktop/OS\ Lab/27-01-22/
+    8  echo "Question 1"
+    9  read -p "Enter username: " user
+   10  if [ "$user" = "$(whoami)" ]; then echo "$user is logged in"; else echo "$user is not logged in"; fi
+   11  echo "Question 2"
+   12  read -p "Enter alphabet: " alpha
+   13  printf "%s\n" [$alpha]*
+   14  echo "Question 3"
+   15  read -p "Enter file name: " filename
+   16  username=$(whoami)
+   17  owner=$(ls -l "$filename" | awk '{ print $3 }')
+   18  permissions=$(ls -l "$filename" | awk '{ print $1 }')
+   19  if [[ ("$username
+   20  if [[ ("$username" == "$owner") && (
+   21  if [[ ("$username" == "$owner") && ("${permissions:3:1}" == "x") ]]; then echo "has execute permissions"; else echo "no execute permissions"; fi
+   22  echo "Question 4"
+   23  ls -Sl | head
+   24  history >> log2.txt

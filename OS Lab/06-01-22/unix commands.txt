@@ -1,0 +1,24 @@
+mkdir CSE
+cd CSE
+cal > date
+now=$(date)
+echo "$now" > date
+vi user
+cat /etc/passwd > user
+
+vi countries.txt
+grep -i "asia" countries.txt
+grep -i "asia" countries.txt > asia.txt
+sort asia.txt
+sort asia.txt > sort.txt
+tr '[:upper:]' '[:lower:]' < sort.txt > lower.txt
+
+vi .stu
+vi .oldfiles
+find . -name \*stu\*
+find . -name \*old\*
+
+vi marks.txt
+i
+grep -n '^' marks.txt > marks_numbered.txt
+

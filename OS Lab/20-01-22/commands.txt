@@ -1,0 +1,46 @@
+echo "Question 1"
+read X
+2
+read n
+10
+p=$(($X**$n))
+echo "$X to the power $n = $p"
+
+echo "Question 2"
+while [ "$i" -lt 10 ]
+> do
+> read x
+> sum=`expr $sum + $x`
+> i=`expr $i + 1`
+> done
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+echo "Sum = $sum"
+avg=$(($sum/10))
+echo "Average = $avg"
+
+echo "Question 3"
+sum=0
+b=10
+read num
+n=$num
+while [ $n -gt 0 ]
+do
+rem=$((n % 10))
+i=$((rem * rem * rem))
+sum=$((sum + i))
+n=$((n / b))
+done
+if [ $sum == $num ]
+echo "yes"
+else
+echo "no"
+

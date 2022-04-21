@@ -1,0 +1,17 @@
+    1  echo "Question 1"
+    2  echo "Enter Username: "
+    3  read user
+    4  if [ "$user" = "$(whoami)" ]; > then; >   echo "$user logged in"; > else; >   echo "$user not logged in"; > fi; 
+    5  cd Desktop/OS\ Lab/27-01-22/
+    6  echo "Question 1"
+    7  read -p "Enter username: " user
+    8  if [ "$user" = "$(whoami)" ]; then echo "$user is logged in"; else echo "$user is not logged in"; fi
+    9  echo "Question 2"
+   10  read -p "Enter alphabet: " alpha
+   11  printf "%s\n" [$alpha]*
+   12  echo "Question 3"
+   13  read -p "Enter file name: " filename
+   14  if [[ -x "$filename" ]]; then echo "File $filename is executable"; else echo "File $filename is not executable"; fi
+   15  echo "Question 4"
+   16  ls -Sl | head
+   17  history >> log.txt
